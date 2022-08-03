@@ -8,26 +8,26 @@
 
  1. 游戏开始，玩家会出现在屏幕的左上方，敌人也会随机生成，并且按照随机方向移动。
 
-    ![mainview1](https://gitee.com/yiyang-tony/bomberman/tree/master/res/images/mainview1.png)
+    ![mainview1](res/images/mainview1.png)
 
  2. 通过上下左右控制玩家移动，按下空格则会释放炸弹，炸弹在规定时间过后会产生爆炸效果（这里规定时间我们设置的是3秒）。
 
-    ![mainview2](https://gitee.com/yiyang-tony/bomberman/tree/master/res/images/mainview2.png)
+    ![mainview2](res/images/mainview2.png)
 
  3. 可以通过释放炸弹炸宝箱来有几率的获得道具（下图中红色火焰即为道具 我们可以走过去拾取道具来使我们的爆炸范围变大）
 
-    ![mainview3](https://gitee.com/yiyang-tony/bomberman/tree/master/res/images/mainview3.png)
+    ![mainview3](res/images/mainview3.png)
 
  4. 当玩家被炸弹炸到或者被敌人碰到时，游戏随即结束。
 
-    ![mainview4](https://gitee.com/yiyang-tony/bomberman/tree/master/res/images/mainview4.png)
+    ![mainview4](res/images/mainview4.png)
 
 ## 游戏实现
 1. **主要框架**
 
    **``下图为游戏的几个主要的类，另外还有两个枚举第一个为游戏地图方格的枚举（CellType），第二个为玩家或怪物移动方向的枚举（Forward）。``**
 
-   ![](https://gitee.com/yiyang-tony/bomberman/tree/master/res/images/mainframe.png)
+   ![](res/images/mainframe.png)
 
 2. **View类**
 
