@@ -1,0 +1,31 @@
+#pragma once
+#include "Maze.h"
+#include "Boom.h"
+#include <list>
+
+#include"gl/gl.h"
+#include"gl/glu.h"
+
+
+class Player
+{
+public:
+	Player();
+	virtual ~Player();
+	Maze * maze;										//ÃÔ¹¬
+	std::list<Boom*> *boomlist;						//Õ¨µ¯¶ÓÁÐ
+	void move(int key, double time);				//Íæ¼ÒÒÆ¶¯
+	bool isEnd();
+
+private:
+	int p_x,p_y,p_forWard;							//ÃÔ¹¬×ø±êp_x,p_y,Íæ¼Ò³¯Ïò
+	int range;
+	int boomid;
+	CPoint point[100];									//Ê¤¸ºÅÐ¶Ï
+	int n;
+	bool borderCheck(int ,int );					//±ß½ç¼ì²é
+	bool collisonCheck(int);						//Åö×²¼ì²â
+	
+	Boom* bullet;
+
+};
